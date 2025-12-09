@@ -1,6 +1,7 @@
 # Instructions for Cross-compiling blasfeo Library
 *(tested 2025-12-05)*
 
+## Steps
 - clone library: `git clone https://github.com/giaf/blasfeo`
 - in `CMakeLists.txt` empty out the target-specific C and ASM flags, such that they do not interfere with the flags set by ourselves in the toolchain file, e.g.,
   - `set(C_FLAGS_TARGET_ARMV7A_ARM_CORTEX_A9   "")`
